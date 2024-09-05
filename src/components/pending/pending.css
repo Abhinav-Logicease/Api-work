@@ -1,0 +1,20 @@
+/* color:'white',backgroundColor:'purple'
+,borderRadius:'4px',display:'flex',alignItems:'center' */
+.reqPending{
+    color: white;
+    background-color: rgb(167, 10, 167);
+    border-radius: 4px;
+    display: flex;padding: 1px 0px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}
+.icon{
+    margin-left: 4px;
+}
+@media only screen and (max-width: 880px) {
+    
+    .icon{
+        margin-left: -29px;
+    }
+  }

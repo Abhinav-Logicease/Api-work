@@ -1,0 +1,19 @@
+.Container{
+    padding: 20px;
+}
+th{
+    
+    padding:20px;
+}
+table{
+    width: 100%;
+    border-spacing: 20px;
+    border: 1px solid black;
+}
+.tableRow{
+    border:1px solid black;
+}
+td{
+    border:1px solid black;
+    text-align: center;   
+}

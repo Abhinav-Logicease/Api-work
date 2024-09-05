@@ -1,0 +1,12 @@
+.paid{
+    border-radius: 4px;
+    width: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(61, 212, 122);
+    color: white;padding: 1px 0px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}

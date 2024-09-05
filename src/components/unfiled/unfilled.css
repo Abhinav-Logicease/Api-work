@@ -1,0 +1,10 @@
+.block{
+    color: white;
+    background-color: orange;
+    border-radius: 4px;
+    display: flex;padding: 1px 0px;
+    width: 100px;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: flex-start;
+}

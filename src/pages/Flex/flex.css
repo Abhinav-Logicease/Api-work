@@ -1,0 +1,13 @@
+.flex-conatiner{
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    
+}
+.flex-item{
+    border: 1px solid black;
+    padding: 20px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}

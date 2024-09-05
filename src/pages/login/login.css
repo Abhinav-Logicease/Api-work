@@ -1,0 +1,129 @@
+/* body{
+  background-color:  #00bfff;
+} */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    max-width: 350px;
+    width: 100%;
+    margin: 150px auto ;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    
+  }
+  
+  .title {
+    margin-top: 8px;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(17, 24, 39);
+    text-align: center;
+    
+  }
+  
+  .heading {
+    font-size: 14px;
+    line-height: 0px;
+    color: rgb(75, 85, 99);
+    text-align: center;
+    
+  }
+  
+  .input-container {
+    display: flex;
+
+    align-items: center;
+    border: 1px solid rgb(209, 213,219);
+    border-radius: 99px;
+    padding: 10px;
+    width: 100%; 
+    margin-top: 15px;
+    
+    box-sizing: border-box;
+  }
+  
+  .input-container input {
+    border: none;
+    outline: none;
+    padding-left: 8px;
+    flex: 1;
+    font-size: 14px;
+    
+    color: rgb(17, 24, 39);
+    width: 100%; /* Ensure input takes full width of container */
+  }
+  
+  .input-container input::placeholder {
+    color: lightgray;
+  }
+  
+  .input-container svg {
+    color: gray;
+  }
+  
+  /* Login button */
+  button {
+    width: 100%; /* Change this to your desired width, e.g., 100% */
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 99px;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  button:hover {
+    background-color: #00a2d1;
+  }
+  
+  
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+      padding: 15px;
+    }
+  
+    .title {
+      font-size: 20px;
+    }
+  
+    .heading {
+      font-size: 12px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .container {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .title {
+      font-size: 18px;
+    }
+  
+    .heading {
+      font-size: 10px;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 8px;
+    }
+  }
+  

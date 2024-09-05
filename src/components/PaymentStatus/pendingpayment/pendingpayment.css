@@ -1,0 +1,16 @@
+.pending{
+    
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: orange;
+        padding-left: 10px;
+        align-items: center;
+        color:white;
+        width: 110px;
+        justify-content: flex-start;
+        padding: 1px 0px 1px 10px ;
+      
+    
+}
