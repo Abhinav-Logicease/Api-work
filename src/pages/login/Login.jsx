@@ -22,7 +22,9 @@ const Login = () => {
   };
 
   return (
-    <div className="container">
+    <div className='box-conatiner'>
+
+<div className="container">
         <div style={{width:'90%',padding:'10px'}}>
       <div style={{display:'flex',justifyContent:'center'}}>
       <img alt="Your Company" src={a} style={{ height: '80px', width: 'auto', }} />
@@ -80,6 +82,7 @@ const Login = () => {
           </a>
         </p>
         </div>
+    </div>
     </div>
   );
 }

@@ -1,6 +1,10 @@
-/* body{
-  background-color:  #00bfff;
-} */
+.box-conatiner{
+  background-color: #00bfff;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
 .container {
     display: flex;
     flex-direction: column;
