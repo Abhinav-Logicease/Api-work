@@ -3,7 +3,7 @@
     color: white;
     height: auto;
     width: 100%;
-    position: fixed;
+    position: relative;
     bottom: 0;
     font-size: 22px;
     align-items: center;
