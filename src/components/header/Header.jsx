@@ -1,34 +1,50 @@
-import React from 'react'
-import './header.css'
+import React, { useState } from 'react';
+import './header.css';
 import { IoMdArrowBack } from "react-icons/io";
 import { Link } from 'react-router-dom';
+import { MdOutlineSegment } from "react-icons/md";
+import c from '../../pages/assets/c.png';
 
-const Header = ({backarrow}) => {
+const Header = ({ backarrow, style }) => {
+  const [toggle, setToggle] = useState(false);
+
+  const handleToggle = () => setToggle(!toggle);
+
   return (
-    <div className='header'>
+    <div className='header' style={style}>
       <div className='navbar'>
-      
+        {backarrow ? (
+          <Link to={'/home'} className='navlink' style={{ color: 'white' }}>
+            <IoMdArrowBack /> Back
+          </Link>
+        ) : (
+          <>
+            <div className='toggleIcon' onClick={handleToggle}>
+              <MdOutlineSegment size={25} />
+            </div>
 
-     {
-      backarrow ?(
-        <Link to={'/home'} className='navlink'> <IoMdArrowBack/> Back </Link>
-      ):(
-        <>
-      <div className='navitem'>
-        <Link to={'/about'} className='navlink'> About Page </Link>
-        <Link to={'/flex'} className='navlink'> Flex Container </Link>
-        <Link to={'/order'} className='navlink'> Order </Link>
-      </div>
-       
-      <div className='logo-container'>
-        <img className='logo' src='https://w7.pngwing.com/pngs/63/1016/png-transparent-google-logo-google-logo-g-suite-chrome-text-logo-chrome.png'/>
-      </div>
-      </>  
-      )
-     }
+            <div className='logo-container'>
+              <img className='logo' src={c} alt='Logo' />
+            </div>
+
+            <div className='navitem'>
+              <Link to={'/about'} className='navlink'>About Page</Link>
+              <Link to={'/flex'} className='navlink'>Flex Container</Link>
+              <Link to={'/order'} className='navlink'>Orders</Link>
+            </div>
+
+            {toggle && (
+              <div className='navToggle'>
+                <Link to={'/about'} className='navlink'>About Page</Link>
+                <Link to={'/flex'} className='navlink'>Flex Container</Link>
+                <Link to={'/order'} className='navlink'>Orders</Link>
+              </div>
+            )}
+          </>
+        )}
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

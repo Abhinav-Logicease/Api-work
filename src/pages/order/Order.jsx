@@ -75,6 +75,7 @@ const info=[
 }
 ]
 
+
 const Order = () => {
   const [data,setData]=useState([]);
 
@@ -82,10 +83,11 @@ const Order = () => {
     const fetchData = info
     setData(fetchData)
   },[])
-  console.log(data)
+  console.log(data);
+  const style = {backgroundColor:'#624E88'}
   return (
     <>
-    <Header backarrow={true}/>
+    <Header backarrow={true } style={style}/>
     <OrderListComponents user={info}/></>
   )
 }

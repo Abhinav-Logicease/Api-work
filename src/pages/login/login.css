@@ -42,9 +42,8 @@
   
   .input-container {
     display: flex;
-
     align-items: center;
-    border: 1px solid rgb(209, 213,219);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 99px;
     padding: 10px;
     width: 100%; 
@@ -56,25 +55,26 @@
   .input-container input {
     border: none;
     outline: none;
+    
     padding-left: 8px;
     flex: 1;
     font-size: 14px;
-    
     color: rgb(17, 24, 39);
-    width: 100%; /* Ensure input takes full width of container */
+    width: 100%; 
   }
   
   .input-container input::placeholder {
     color: lightgray;
+    background-color: white;
   }
+  
   
   .input-container svg {
     color: gray;
   }
   
-  /* Login button */
   button {
-    width: 100%; /* Change this to your desired width, e.g., 100% */
+    width: 100%; 
     padding: 12px;
     margin-top: 20px;
     background-color: #00bfff;
@@ -89,6 +89,7 @@
   button:hover {
     background-color: #00a2d1;
   }
+
   
   
   @media (max-width: 768px) {

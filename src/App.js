@@ -5,6 +5,7 @@ import Flex from './pages/Flex/Flex';
 import Login from './pages/login/Login';
 import Order from './pages/order/Order';
 
+
 function App() {
   return (
     <div >
@@ -15,6 +16,7 @@ function App() {
           <Route path='/about' element={<About/>}/>
           <Route path='/flex' element={<Flex/>} />
           <Route path='/order' element={<Order/>} />
+        
         </Routes>
       </Router>
     </div>

@@ -4,9 +4,10 @@ import Footer from '../../components/footer/Footer'
 import './flex.css'
 
 const Flex = () => {
+  const style = {backgroundColor:'#16423C'}
   return (
     <div>
-        <Header backarrow={true}/>
+        <Header backarrow={true} style={style}/>
         
         <div className='flex-conatiner'>
             <div className='flex-item'> container 1</div>

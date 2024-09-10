@@ -12,14 +12,13 @@ code {
     monospace;
 }
 input {
-  background-color: #ffffff; /* or any color you prefer */
-  border: 1px solid #e2e8f0; /* matching border color */
-  color: #1a202c; /* text color */
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0; 
+  color: #1a202c;
 }
 
-/* Override focus styling */
 input:focus {
-  outline: none; /* Remove default outline */
-  background-color: #ffffff; /* Ensures background stays white */
-  border-color: #3b82f6; /* Optional: change border color on focus */
+  outline: none; 
+  background-color: #ffffff; 
+  border-color: #3b82f6;
 }
