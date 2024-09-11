@@ -1,0 +1,95 @@
+.Container{
+    padding: 10px 70px;
+    background-color:  #F0F0F0;
+    overflow-x: scroll;
+    border: none;
+}
+th{
+    padding:15px 10px 5px 15px;
+    font-weight: 450;
+    text-align: left;
+    font-family: "Open Sans", sans-serif;
+    
+}
+table{
+    width: 100%;
+    border: none;
+    border-collapse: separate;
+    border-spacing: 0px 15px;
+    background-color:  #F0F0F0;
+    
+}
+
+tbody   {
+    /* border:1px solid black; */
+    background: white; 
+    
+}
+td{
+    padding: 10px;
+    border: none;
+   
+    text-align: left;
+    border-top:1px solid rgb(206, 201, 201);
+    border-bottom:1px solid rgb(206, 201, 201);
+    
+}
+    /* .tableRow{
+        border:80px solid rgb(116, 111, 111);
+    } */
+.image{
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin-right: 8px;    
+}
+.aligmnet {   
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: flex-start; 
+    min-height: 45px;
+  }
+  @media only screen and (max-width: 880px) {
+    .Container {
+      padding: 20px; 
+    }
+  }
+
+  /* userTile.css */
+.modal-content {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .modal-content img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+  }
+  
+  @media (max-width: 768px) {
+    .modal-content {
+      width: 90%;
+      padding: 30px;
+    }
+  
+    .modal-content img {
+      width: 50px;
+      height: 50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-content {
+      width: 80%;
+      padding: 30px;
+    }
+  
+    .modal-content img {
+      width: 40px;
+      height: 40px;
+    }
+  }
+  

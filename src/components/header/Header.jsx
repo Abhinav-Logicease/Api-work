@@ -32,6 +32,7 @@ const Header = ({ backarrow, style }) => {
               <Link to={'/flex'} className='navlink'>Flex Container</Link>
               <Link to={'/order'} className='navlink'>Orders</Link>
               <Link to={'/stud'} className='navlink'>Api Data</Link>
+              <Link to={'/user'} className='navlink'>Users</Link>
             </div>
 
             {toggle && (
@@ -40,6 +41,7 @@ const Header = ({ backarrow, style }) => {
                 <Link to={'/flex'} className='navlink'>Flex Container</Link>
                 <Link to={'/order'} className='navlink'>Orders</Link>
                 <Link to={'/stud'} className='navlink'>Api Data</Link>
+                <Link to={'/user'} className='navlink'>Users</Link>
               </div>
             )}
           </>

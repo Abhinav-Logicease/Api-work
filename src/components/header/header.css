@@ -56,7 +56,29 @@
       gap: 10px; 
       position: absolute; 
       top: 100%; 
-     left: 0;
+      left: 0;
+      background-color: white; 
+      padding: 20px;
+      border: 1px solid #ddd; 
+      z-index: 1000; 
+    }
+  
+    .toggleIcon {
+      display: block;
+    }
+  }
+  @media only screen and (max-width: 820px) {
+    .navitem {
+      display: none; 
+    }
+  
+    .navToggle {
+      display: flex;
+      flex-direction: column;
+      gap: 10px; 
+      position: absolute; 
+      top: 100%; 
+      left: 0;
       background-color: white; 
       padding: 20px;
       border: 1px solid #ddd; 

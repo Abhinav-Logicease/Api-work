@@ -5,6 +5,8 @@ import Flex from './pages/Flex/Flex';
 import Login from './pages/login/Login';
 import Order from './pages/order/Order';
 import Product from './pages/product/Product';
+import Users from './pages/users/Users';
+import UserDetails from './components/userDetails/UserDetails';
 
 
 function App() {
@@ -18,6 +20,9 @@ function App() {
           <Route path='/flex' element={<Flex/>} />
           <Route path='/order' element={<Order/>} />
           <Route path='/stud' element={<Product/>} />
+          <Route path='/user' element={<Users/>} />
+          <Route path='/user-details' element={<UserDetails/>} />
+          
         
         </Routes>
       </Router>
