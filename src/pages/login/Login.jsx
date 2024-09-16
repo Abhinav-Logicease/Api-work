@@ -6,20 +6,43 @@ import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
 
-  const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (email === 'admin@gmail.com' && password === 'admin') {
-      alert('Login successful!');
-      navigate('/home')
-    } else {
-      setError('Invalid email or password');
-    }
-  };
+    setError('');
+  
+    fetch('https://dummyjson.com/auth/login', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        username: name,
+        password: password
+      })
+    })
+    .then(res => {
+      console.log('Response Status:', res.status); 
+      return res.json();
+    })
+    .then(data => {
+      console.log('Response Data:', data);
+  
+      if (data && data.token) {
+        alert('Login successful!');
+        localStorage.setItem('user', JSON.stringify(data));
+        navigate('/home');
+      } else {
+        setError('Invalid username or password');
+      }
+    })
+    .catch(error => {
+      setError('An error occurred. Please try again.');
+      console.error('Login error:', error);
+    });
+  }
 
   return (
     <div className='box-conatiner'>
@@ -36,15 +59,15 @@ const Login = () => {
         <div className="input-container">
           <CiUser size={'20px'} />
           <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Username or Email"
+            id="name"
+            name="name"
+            type="name"
+            placeholder="Username"
             required
             style={{backgroundColor:'white'}}
-            autoComplete="email"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
+            autoComplete="username"
+            value={name}
+            onChange={(e)=>setName(e.target.value)}
           />
         </div>
         <div className="input-container">
