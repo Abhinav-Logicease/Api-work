@@ -34,9 +34,10 @@ const Header = ({ backarrow, style }) => {
               <Link to={'/stud'} className='navlink'>Api Data</Link>
               <Link to={'/user'} className='navlink'>Users</Link>
             </div>
-
+             
             {toggle && (
-              <div className='navToggle'>
+              <div className={`navToggle ${toggle ? 'show' : ''}`}>
+                <Link onClick={handleToggle} style={{right:10,position:'absolute',top:0,padding:10}} className='navlink'>❌</Link>
                 <Link to={'/about'} className='navlink'>About Page</Link>
                 <Link to={'/flex'} className='navlink'>Flex Container</Link>
                 <Link to={'/order'} className='navlink'>Orders</Link>

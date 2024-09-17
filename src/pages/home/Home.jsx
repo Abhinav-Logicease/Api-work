@@ -57,7 +57,7 @@ const Home = () => {
 
         
           <div className={`ImgHeader ${fade ? 'fade' : ''}`}>
-            <img src={imageArray[currentText]} alt="" style={{ maxWidth: '100%', height: 'auto' }} />
+            <img src={imageArray[currentText]} alt="" style={{ maxWidth: '70%', height: 'auto' }} />
           </div>
 
         </div>
@@ -65,7 +65,9 @@ const Home = () => {
 
         
       </div>
+      <div style={{marginTop:'200px'}}>
       <ContentTile/>
+      </div>
 
 
 
